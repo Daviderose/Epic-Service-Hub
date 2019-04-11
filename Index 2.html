@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Epic Service Hub</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-tomorrow.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <nav class="navbar fixed-top mercy-navbar-border p-0">
+            <div class="navbar-brand pl-3">
+                <a href="#"><img id="header-left-mercyLogo" src="https://consumerview-uat.mercy.net/assets/images/mercy-logo.png" height="50" class="d-inline-block align-top" alt=""></a>
+                <span class="ml-3 navbar-font-lg" id="header-left-title">Epic Service Hub</span>
+            </div>
+                <div class="ml-auto d-flex flex-row align-items-baseline"></div>
+    </nav>
+  </head>
+  <body>
+        
+        <div class="row">
+            <div class="col-2.5 offset-1 pb-5" id="left-column">
+                <ul class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary pl-5">Introduction</a>
+                    <a href="#getting-started" class="list-group-item list-group-item-action list-group-item-primary pl-5">Getting Started</a>
+                    <a href="#services" class="appt-service list-group-item list-group-item-action list-group-item-primary pl-5">Services</a>
+                    <!-- <a href="#services" class="list-group-item list-group-item-action list-group-item-primary">Announcement Service</a> -->
+
+                    <!-- Begin Swagger Links -->
+                   <span class=" button-span d-flex"><a href="#appointment-service" class="swagger-row list-group-item list-group-item-action list-group-item-primary pl-5">
+                       Appointment</a><a id="top-logo" href="https://consumerview-uat.mercy.net/AppointmentService/swagger-ui.html"><img src="swagger-logo.png" height="30" title="Link to swagger document" 
+                        class="swagger-logo mt-2 mb-2 mr-1 ml-1"/></a></span>
+
+                   <span class="button-span d-flex"><a href="#care-team-service" class="swagger-row list-group-item list-group-item-action list-group-item-primary pl-5">
+                       Care Team <a href="https://consumerview-uat.mercy.net/CareTeamService/swagger-ui.html"><img src="swagger-logo.png" height="30" title="Link to swagger document" 
+                        class="swagger-logo mt-2 mb-2 mr-1 ml-1"/></a></a></span>
+
+                   <span class="button-span d-flex"><a href="#contract-service" class="swagger-row list-group-item list-group-item-action list-group-item-primary pl-5">
+                       Contract <a href="https://consumerview-uat.mercy.net/ContractService/swagger-ui.html"><img src="swagger-logo.png" height="30" title="Link to swagger document" 
+                        class="swagger-logo mt-2 mb-2 mr-1 ml-1"/></a></a></span>
+
+                   <span class="button-span d-flex"><a href="#department-service" class="swagger-row list-group-item list-group-item-action list-group-item-primary pl-5">
+                       Department <a href="https://consumerview-uat.mercy.net/DepartmentService/swagger-ui.html"><img src="swagger-logo.png" height="30" title="Link to swagger document" 
+                        class="swagger-logo mt-2 mb-2 mr-1 ml-1"/></a></a></span>
+
+                   <span class="button-span d-flex"><a href="#knowledge-service" class="swagger-row list-group-item list-group-item-action list-group-item-primary pl-5">
+                       Knowledge <a href="https://consumerview-uat.mercy.net/KnowledgeService/swagger-ui.html"><img src="swagger-logo.png" height="30" title="Link to swagger document" 
+                        class="swagger-logo mt-2 mb-2 mr-1 ml-1"/></a></a></span>
+
+                   <span class="button-span d-flex"><a href="#map-service" class="swagger-row list-group-item list-group-item-action list-group-item-primary pl-5">
+                       Map <a href="https://consumerview-uat.mercy.net/MapService/swagger-ui.html"><img src="swagger-logo.png" height="30" title="Link to swagger document" 
+                        class="swagger-logo mt-2 mb-2 mr-1 ml-1"/></a></a></span>
+
+                   <span class="button-span d-flex"><a href="#patient-billing-service" class="swagger-row list-group-item list-group-item-action list-group-item-primary pl-5">
+                       Patient Billing <a href="https://consumerview-uat.mercy.net/PatientBillingService/swagger-ui.html"><img src="swagger-logo.png" height="30" title="Link to swagger document" 
+                        class="swagger-logo mt-2 mb-2 mr-1 ml-1"/></a></a></span>
+
+                   <span class="button-span d-flex"><a href="#patient-health-maintenance-service" class="swagger-row list-group-item list-group-item-action list-group-item-primary pl-5">
+                       Health Maintenance<a href="https://consumerview-uat.mercy.net/PatientHealthMatintenanceService/swagger-ui.html"><img src="swagger-logo.png" height="30" title="Link to swagger document" 
+                        class="swagger-logo mt-2 mb-2 mr-1 ml-1"/></a></a></span>
+
+                   <span class="button-span d-flex"><a href="#patient-info-service" class="swagger-row list-group-item list-group-item-action list-group-item-primary pl-5">
+                       Patient Info <a href="https://consumerview-uat.mercy.net/PatientInfoService/swagger-ui.html"><img src="swagger-logo.png" height="30" title="Link to swagger document" 
+                        class="swagger-logo mt-2 mb-2 mr-1 ml-1"/></a></a></span>
+
+                   <span class="button-span d-flex"><a href="#patient-insurance-service" class="swagger-row list-group-item list-group-item-action list-group-item-primary pl-5">
+                       Patient Insurance <a href="https://consumerview-uat.mercy.net/PatientInsuranceService/swagger-ui.html"><img src="swagger-logo.png" height="30" title="Link to swagger document" 
+                        class="swagger-logo mt-2 mb-2 mr-1 ml-1"/></a></a></span>
+
+                   <span class="button-span d-flex"><a href="#patient-medication-service" class="swagger-row swagger-row list-group-item list-group-item-action list-group-item-primary pl-5">
+                       Patient Medication <a href="https://consumerview-uat.mercy.net/PatientMedicationService/swagger-ui.html"><img src="swagger-logo.png" height="30" title="Link to swagger document" 
+                        class="swagger-logo mt-2 mb-2 mr-1 ml-1"/></a></a></span>
+
+                   <span class="button-span d-flex"><a href="#patient-notification-service" class="swagger-row list-group-item list-group-item-action list-group-item-primary pl-5">
+                       Patient Notification <a href="https://consumerview-uat.mercy.net/PatientNotificationService/swagger-ui.html"><img src="swagger-logo.png" height="30" title="Link to swagger document" 
+                        class="swagger-logo mt-2 mb-2 mr-1 ml-1"/></a></a></span>
+
+                   <span class="button-span d-flex"><a href="#patient-referral-service" class="swagger-row list-group-item list-group-item-action list-group-item-primary pl-5">
+                       Patient Referral <a href="https://consumerview-uat.mercy.net/PatientReferralService/swagger-ui.html"><img src="swagger-logo.png" height="30" title="Link to swagger document" 
+                        class="swagger-logo mt-2 mb-2 mr-1 ml-1"/></a></a></span>
+
+                   <span class="button-span d-flex"><a href="#pharmacy-service" class="swagger-row list-group-item list-group-item-action list-group-item-primary pl-5">
+                       Pharmacy <a href="https://consumerview-uat.mercy.net/PharmacyService/swagger-ui.html"><img src="swagger-logo.png" height="30" title="Link to swagger document" class="swagger-logo mt-2 mb-2 mr-1 ml-1"/></a></a></span>
+                    <!-- End Swagger Links -->
+                    
+                    <a href="#what-is-rest" class="list-group-item list-group-item-action list-group-item-primary pl-5">What is REST?</a>
+                    <a href="#best-practices" class="list-group-item list-group-item-action list-group-item-primary pl-5">Best Practices</a>
+                    <a href="#authentication" class="list-group-item list-group-item-action list-group-item-primary pl-5">Authentication</a>
+                    <a href="#request-and-response" class="list-group-item list-group-item-action list-group-item-primary pl-5">Request and Response</a>
+                    <a href="#resources" class="list-group-item list-group-item-action list-group-item-primary pl-5">Resources</a>
+                    <a href="#change-log" class="list-group-item list-group-item-action list-group-item-primary pl-5">Change Log</a>
+                    <a href="#terms-of-use" class="list-group-item list-group-item-action list-group-item-primary pl-5">Terms of Use</a>
+                </ul>
+            </div>
+            <div class="col-8 pt-3 pb-5" >
+                <h1 class="pb-3">Epic Service Hub API (0.0.1)</h1>
+                <h2 class="pt-3">Introduction</h2>
+                    <p class="pt-3 pl-3">Welcome to the Epic Service Hub API.  A robust data service that is secure, reliable and fast. 
+                        The Epic Service Hub API takes the difficult work of accessing all sorts of patient data from Epic without the
+                        need to write elaborate and extensive SQL queries.  </p>  
+                        
+                    <p class="pl-3">The Epic Service Hub API is designed for developers, 
+                    engineers, or anyone else who is comfortable creating custom-coded solutions or integrating with RESTful APIs.  
+                    If you would like to learn more about REST before using the API, check out our <a href="#what-is-rest">Introduction to REST</a> guide. </p>
+
+                <h2 class="pt-5">Getting Started</h2>
+                <h5 class="pt-3 pl-3">Before You Start</h5>
+                    <p class="pt-3 pl-5">If you are interested in integrating your app or software platform with Epic Service Hub, 
+                            you will first need to <a href="#">register and authenticate your service with our API. </a> Also you may find
+                            it helpful to familiarize yourself with our <a href="#terms-of-use">terms of use.</a></p>
+
+                    <p class="pt-3 pl-5">Once you have a valid API key, you can view and test out each endpoint of our API via the corresponding swagger links indicated 
+                            by the swagger icon. <img src="swagger-logo.png" height="15"/>  These icons are both located to the right of each quick link and next to the 
+                            header of each service’s article.</p>
+
+                    <p class="pt-3 pl-5">When you click into a swagger document you will see detailed information on each service’s endpoint as well as a button in 
+                        the upper-right corner that says “Try it out”.  Clicking on this will allow you to test out the endpoint after filling out the appropriate 
+                        information for the headers/parameters.</p>
+
+                    <div class="pt-3 pl-3 pb-3 ml-5 mr-5"><img id="swagger-screen" width="900" src="swagger-screen.png"/></div>
+
+                    <p class="pt-3 pl-5">Finally, after clicking "Try it out" you simply add the required information and then click "Execute" below.  Your response
+                        body will pop up below that with a corresponding response code.  
+                    </p>
+
+                    <div class="pt-3 pl-3 pb-3 ml-5 mr-5"><img id="swagger-screen" width="900" src="swagger-screen 2.png"/></div>
+
+                    <div class="pt-3 pl-3 ml-5 mr-5">
+                            <h5>An example of "searchPatientByMrn" Response Body:</h5>
+                            <pre><code class="language-json">
+                                    {
+                                        "ErrorMsg": "string",
+                                        "Patients": [
+                                          {
+                                            "Addresses": [
+                                              {
+                                                "City": "string",
+                                                "Country": "string",
+                                                "County": "string",
+                                                "District": "string",
+                                                "Email": [
+                                                  "string"
+                                                ],
+                                                "HouseNumber": "string",
+                                                "PhoneNumbers": [
+                                                  {
+                                                    "Number": "string",
+                                                    "Type": "string"
+                                                  }
+                                                ],
+                                                "PostalCode": "string",
+                                                "State": "string",
+                                                "Street": [
+                                                  "string"
+                                                ],
+                                                "Type": "string"
+                                              }
+                                            ]...
+                                        ]   
+                                      }
+                            </code></pre>
+                        </div>
+
+                    <p class="pt-4 pl-5">For more information on our accepted response codes, click <a href="#request-and-response">here</a>.</p>
+
+
+                
+
+                <h2 class="pt-5" id="services">Services</h2>
+                <p class="pl-3 pt-3">The Epic Service Hub API provides several services for accessing patient and clinical 
+                    information from Epic.  Each service is divided up by functionality.  Below is a list of our services 
+                    along with a brief description about what they do and how to access them.</p>
+
+                <h2 class="pt-5" id="appointment-service">Appointment Service <a href="https://consumerview-uat.mercy.net/AppointmentService/swagger-ui.html"><img class="pb-1" src="swagger-logo.png" height="40"/></a></h2>
+                <p class="pl-3 pt-3">The Appointment Service API provides access to any upcoming appointments 
+                    that a patient might have.  A user will be returned the <b>appointment start time</b>, the <b>appointment date</b>, 
+                    the <b>name</b> of the provider, and the <b>type</b> of visit. <!--The path of the API is:--></p>
+
+                <h2 class="pt-5" id="care-team-service">Care Team Service 
+                    <a href="https://consumerview-uat.mercy.net/CareTeamService/swagger-ui.html"><img class="pb-1" 
+                        src="swagger-logo.png" height="40"/></a></h2>
+
+                <p class="pl-3 pt-3">The Care Team Service API provides access to physicians that are part of a patient’s care team.  
+                    The user will be returned information about both the patient and the physicians that are a part of the patient's care team. <!--The path of the 
+                        API is:--></p>
+
+
+                <h2 class="pt-5" id="contract-service">Contract Service 
+                    <a href="https://consumerview-uat.mercy.net/ContractService/swagger-ui.html"><img class="pb-1" 
+                        src="swagger-logo.png" height="40"/></a></h2>
+
+                <p class="pl-3">The Contract Service API provides access to contracts between Physicians and 
+                    locations that they are contracted to practice at. Contracts can be pulled up one of two ways, either 
+                    by providing a <b>search term</b> (with or without a relevant category like "providers") or bringing up a 
+                    specific contract by entering in the <b>contract id</b>.<!-- These are: --> </p>
+
+                <h2 class="pt-5" id="department-service">Department Service 
+                    <a href="https://consumerview-uat.mercy.net/DepartmentService/swagger-ui.html"><img class="pb-1" 
+                        src="swagger-logo.png" height="40"/></a></h2>
+
+                <p class="pl-3 pt-3">The Department Service API provides a secure way to geographically search for Epic departments.   
+                        These departments can be accessed either by using <b>coordinates</b> (lattitude and longitude) or by searching a procedure.  The latter 
+                        will return departments that provide services for that particular <b>procedure</b>.</p>
+    
+
+                <h2 class="pt-5" id="knowledge-service">Knowledge Service 
+                    <a href="https://consumerview-uat.mercy.net/KnowledgeService/swagger-ui.html"><img class="pb-1" 
+                        src="swagger-logo.png" height="40"/></a></h2>
+
+                <p class="pl-3">The Knowledge Service API provides access to Knowledge articles for procedures, instructions and 
+                    insurance plans. There are six different API calls which can be used and are divided by functionality. Knowledge
+                    can be searched both generally and specifically by type.  It also searches through indexed data which makes searching
+                    not only quick, but it can be used with typeahead functionality. </p>
+
+                <h2 class="pt-5" id="map-service">Map Service <a href="https://consumerview-uat.mercy.net/MapService/swagger-ui.html">
+                    <img class="pb-1" src="swagger-logo.png" height="40"/></a></h2>
+
+                <p class="pl-3 p4-3">The Map Service API provides a secure way to search for Map Locations by either <b>coordinates</b>(lat and long bounds) 
+                    or by <b>procedure</b>. When searching by procedure, only locations that perform that procedure are returned. 
+                    Map locations are created from Epic Departments and are used to create locations to be displayed on 
+                    google maps as pins. For more information on the google maps API click <a href="https://developers.google.com/maps/documentation/">here</a>.  
+                    <!--The map service endpoints are:--></p>
+                
+                <h2 class="pt-5" id="patient-billing-service">Patient Billing Service 
+                    <a href="https://consumerview-uat.mercy.net/PatientBillingService/swagger-ui.html"><img class="pb-1" 
+                        src="swagger-logo.png" height="40"/></a></h2>
+
+                <p class="pt-3 pl-3">The Patient Billing Service API provides a secure way to search for a patient’s billing information.  
+                    The API searches based on a patient’s <b>phone number</b> and returns the patient's outstanding balance(if any) and the 
+                    clinic location where the balance is due. <!--The endpoint is:--></p>
+
+                <h2 class="pt-5" id="patient-health-maintenance-service">Patient Health Maintenance Service 
+                    <a href="https://consumerview-uat.mercy.net/PatientHealthMaintenanceService/swagger-ui.html"><img class="pb-1" 
+                        src="swagger-logo.png" height="40"/></a></h2>
+
+                <p class="pt-3 pl-3">The Patient Health Maintenance Service API provides access to a patient’s 
+                    upcoming maintenance appointments. This API takes in a patient <b>MRN</b> and a
+                    <b>location</b> and returns the upcoming appointments for that location. <!--The API endpoint is:--></p>
+                
+                <h2 class="pt-5" id="patient-info-service">Patient Info Service 
+                    <a href="https://consumerview-uat.mercy.net/PatientInfoService/swagger-ui.html"><img class="pb-1" 
+                        src="swagger-logo.png" height="40"/></a></h2>
+
+                <p class="pl-3 pt-3">The Patient Info Service API provides access to general patient data from Epic.  
+                    This service allows a user to search patients by three different methods. Either by the patient’s <b>Name</b>, 
+                    <b>Phone Number</b> or by their <b>MRN</b>.  <!--Each method has their own API endpoint and required fields that 
+                        need to be in both the request header and the request body. The three APIs are:--></p>
+
+                <h2 class="pt-5" id="patient-insurance-service">Patient Insurance Service 
+                    <a href="https://consumerview-uat.mercy.net/PatientInsuranceService/swagger-ui.html"><img class="pb-1" 
+                        src="swagger-logo.png" height="40"/></a></h2>
+
+                <p class="pt-3 pl-3">The Patient Insurance Service API provides access to a patient’s 
+                        insurance plans and coverages.  The search is performed by providing the patient's <b>phone number</b>.<!--The API endpoint is:--></p>
+
+                <h2 class="pt-5" id="patient-medication-service">Patient Medication Service 
+                    <a href="https://consumerview-uat.mercy.net/PatientMedicationService/swagger-ui.html"><img class="pb-1" 
+                        src="swagger-logo.png" height="40"/></a></h2>
+
+                <p class="pl-3 pt-3">The Patient Medication API provides access to patient medications from Epic.  
+                    This service allows a user to view a particular patient's medications by using their <b>MRN</b> as the patient id.  
+                    <!--This API endpoint has required fields that need to be in both the request header and the request body. The API 
+                    endpoint is:--></p>
+
+                <h2 class="pt-5" id="patient-notification-service">Patient Notification Service 
+                    <a href="https://consumerview-uat.mercy.net/PatientNotificationService/swagger-ui.html"><img class="pb-1" 
+                        src="swagger-logo.png" height="40"/></a></h2>
+
+                <p class="pl-3 pt-3">The Patient Notification API shows a patient's preferences when it comes
+                    to being notified. <!--The API endpoint is:--> </p>
+                
+                <h2 class="pt-5" id="patient-referral-service">Patient Referral Service 
+                    <a href="https://consumerview-uat.mercy.net/PatientReferralService/swagger-ui.html"><img class="pb-1" 
+                        src="swagger-logo.png" height="40"/></a></h2>
+
+                <p class="pl-3 pt-3">The Patient Refferal Service API provides access to a patient's referrals. <!--The API endpoint is:--> </p>
+
+                <h2 class="pt-5" id="pharmacy-service">Pharmacy Service 
+                    <a href="https://consumerview-uat.mercy.net/PharmacyService/swagger-ui.html"><img class="pb-1" 
+                        src="swagger-logo.png" height="40"/></a></h2>
+
+                <p class="pl-3 pt-3">The Pharmacy Service API provides access to the Pharmacies that the patient prefers to use. 
+                    <!--The API endpoint is:--> </p>
+
+                    <h2 class="pt-5" id="what-is-rest">What is REST?</h2>
+                    <p class="pt-3 pl-3">The Epic Service Hub API could best be described as “RESTful.” “REST” stands for <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">
+                        Representational State Transfer.</a> It’s an architectural style that’s an alternative to <a href="https://en.wikipedia.org/wiki/Remote_procedure_call">
+                        RPC</a> or <a href="https://en.wikipedia.org/wiki/SOAP">SOAP</a> web services.</p>
+
+                    <p class="pl-3">While there’s no official REST standard, there are common approaches and best practices used across the engineering 
+                        community that help define how RESTful APIs should work. For example, most RESTful APIs follow <a href="https://en.wikipedia.org/wiki/Representational_state_transfer#Architectural_constraints">
+                        six specific constraints</a> or design rules.</p>
+
+                    <p class="pl-3">The Epic Service Hub API follows these practices and uses the standard HTTP methods of <b>GET</b> and <b>POST</b>.</p>
+
+                    <!-- <p class="pl-3 todo"><b>TODO - Do we want to allow other HTTP methods?</b></p> -->
+
+                <h5 class="pt-3 pl-3">RESTful HTTP Methods</h5>
+
+                    <p class="pt-3 pl-5">You may see these standard HTTP methods referred to as <b>CRUD</b>, or <b>C</b>reate, <b>R</b>ead, 
+                        <b>U</b>pdate, <b>D</b>elete. Although <b>CRUD</b> has roots in database operations, you can also map those operations to the standard HTTP methods. 
+                        For example, use a <b>POST</b> request to create a new resource, a <b>GET</b> request to read or retrieve a resource, 
+                        <b>PATCH</b> request to edit a resource, and a <b>DELETE</b> request to delete a resource.</p>
+
+                    <h5 class="pt-3 pl-3 pr-5">REST Methods:</h5>
+
+                    <p class="pt-3  pl-5 pr-5"><b>GET-</b> Retrieve the URIs of the member resources of the collection resource in the response body.</p>
+                    
+                    <p class="pl-5  pr-5"><b>POST-</b> Create a member resource in the collection resource using the instructions in the request body. 
+                        The URI of the created member resource is automatically assigned and returned in the response Location header field.</p>
+                    
+                    <p class="pl-5  pr-5"><b>PUT-</b> Replace all the representations of the member resources of the collection resource with the representation 
+                        in the request body, or create the collection resource if it does not exist.</p>
+                    
+                    <p class="pl-5  pr-5"><b>PATCH-</b> Update all the representations of the member resources of the collection resource using the instructions 
+                        in the request body, or may create the collection resource if it does not exist.</p>
+                    
+                    <p class="pl-5  pr-5"><b>DELETE-</b> Delete all the representations of the member resources of the collection resource.</p>
+
+                    <p class="pt-4  pl-5">For a more comprehensive look at what REST is, check out this <a href="https://restfulapi.net/">tutorial.</a></p>
+
+
+                <h2 class="pt-5" id="best-practices">Best Practices</h2>
+                <h5 class="pt-3 pl-3">Don't Forget Error Handling</h5>
+                <p class="pt-3 pl-5">When you use any API, keep in mind that errors and exceptions will sometimes happen. For example, 
+                    you might experience a connection problem between your servers and the Epic Service Hub, or there sometimes may be 
+                    a rare outage. To make sure that your integration is as reliable as it can be, you should always watch for errors 
+                    and exceptions. If an API call returns an error, log the call in as much detail as you can, including what you sent 
+                    along with the entire error response and headers. In the event that you need to <a href="#">contact support,</a> this information 
+                    can speed up the help process for you.</p>
+
+                <p class="pt-2 pl-5">We also recommend that you async your calls to the API as a background job, instead of making your users wait 
+                    for a response. </p>
+
+                <h5 class="pt-3 pl-3">Make Specific Requests</h5>
+                
+                <p class="pt-3 pl-5">Sometimes, the API will return values that are large and slow to calculate. After you know what data you need, 
+                    use our partial response capabilities to request only what’s essential to you. Often, when you make fewer requests, 
+                    you will generate quicker responses. </p>
+
+                <p class="pt-2 pl-5">Another way to reduce response time is to make fewer calls. Calls that are too frequent can slow 
+                    your application, and may also receive unwanted attention from our operations team. For example, you probably don’t 
+                    need to query every single care provider for every hour for several days, because this data will only change once 
+                    per day. To reduce calls further, we recommend you sync only new data, and cache data that’s unlikely to change. </p>
+
+                <h2 class="pt-5" id="authentication">Authentication</h2>
+                <p class="pl-3 todo"><b>TODO - What authentication should we require?</b></p>
+                <p class="pl-3 todo"><b>TODO - Step-by-step guide on getting authenticated</b></p>
+
+                <h2 class="pt-5" id="request-and-response">Request and Response Formats</h2>
+                
+                <h5 class="pt-3 pl-5 pr-5">Response Codes:</h5>
+
+                <p class="pt-3 ml-3 pl-5 pr-5"><b>200-</b> "SUCCESSFULLY CONNECTED"</p>
+                <p class="pt-2 ml-3 pl-5 pr-5"><b>201-</b> "CREATED"</p>
+                <p class="pt-2 ml-3 pl-5 pr-5"><b>401-</b> "UNAUTHORIZED USER"</p>
+                <p class="pt-2 ml-3 pl-5 pr-5"><b>403-</b> "FORBIDDEN"</p>
+                <p class="pt-2 ml-3 pl-5 pr-5"><b>404-</b> "NOT FOUND"</p>
+                
+                <!-- <p class="pl-5 todo"><b>TODO - Include examples/images of correct/incorrect responses from a service</b></p> -->
+
+                <h2 class="pt-5" id="resources">Resources</h2>
+                <p class="pl-3 pt-3 todo"><b>TODO - Links to resources here</b></p>
+
+                <h2 class="pt-5" id="change-log">Change Log</h2>
+                <p class="pt-3 pl-3">Version 0.01(3.8.19) - Original document created</p>
+
+                <h2 class="pt-5" id="terms-of-use">Terms of Use</h2>
+                <p class="pt-3 pl-3">As with any service that deals with sensitive patient data, all transactions must be 
+                    <b>HIPAA</b> compliant.  <b>HIPAA</b> violations may be subject to hefty fines and/or jail time. 
+                    For a detailed explanation on what <b>HIPAA</b> is click <a href="https://www.hipaajournal.com/hipaa-explained/">
+                    here</a>.</p>
+
+                <p class="pt-3 pl-3">Also, be mindful also that this service is used by many others. Use best practices limit queries
+                    to data that is relevant to you. 
+                </p>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+  </body>
+</html>

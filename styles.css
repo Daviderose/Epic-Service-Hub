@@ -1,0 +1,96 @@
+nav {
+    background-color: white;
+}
+
+body {
+    padding-top: 70px;
+}
+
+h2 {
+    color: #196e97;
+}
+
+.navbar {
+    align: baseline;
+}
+
+.navbar-font-lg {
+    font-size: 165%;
+}
+
+.navcentered {
+    align-items: baseline;
+}
+
+.mercy-navbar-bg {
+    background-color: #196e97;
+}
+
+.mercy-navbar-border {
+    border-bottom: 5px solid #196e97;
+}
+
+#left-column {
+    color: white;
+}
+
+.list-group-item-primary {
+    background-color: #196e97;
+    border: none;
+    
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #196e97;
+
+}
+
+.todo {
+    color: green;
+}
+
+pre {
+    border-radius: 10px;
+    background-color: #333;
+}
+
+.swagger-logo {
+    background-color: #155E80;
+}
+
+.empty-logo {
+    background-color: #196e97;
+    
+}
+
+.button-span {
+    background-color: #155E80;
+    border-radius: 0;
+}
+
+.button-text {
+    text-align: baseline;
+}
+
+.swagger-row {
+    background-color: #155E80;
+}
+
+#swagger-screen {
+    margin: auto;    
+}
+
+/* #top-logo {
+    border-top: 2px solid #155E80
+} */
+
+/* .appt-service {
+    border-bottom: 1px solid white;
+} */
+
+
+
+
+
+
